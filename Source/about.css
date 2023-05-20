@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: none;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #8f99fb;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #8f99fb;
+  height: 10vh;
+}
+img{
+  object-fit: contain;
+  height: 45vh;
+  width: 45vw;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navlinks li {
+  font-family:Bebas Neue;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  height: 5vh;
+}
+.navlinks a {
+  transition: all 0.3s ease 0s;
+  padding: 5px 30px;
+  font-family: Bebas Neue;
+  font-weight: 500;
+  font-size: 150%;
+  border-radius: 40px;
+  color: #58379e;
+  opacity: 60%;
+  margin: 3px;
+}
+.navlinks a:hover {
+  transition: all 0.3s ease 0s;
+  /* border: 3px solid #58379e; */
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color:#b8e3fe;
+  /* text-shadow: 2px 3px 2px #5b5858; */
+}
+
+main {
+  background-color: azure;
+  min-height: 75vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  scroll-margin: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  background-color: transparent;
+  height: 10vh;
+  width: 15vw;
+  object-fit: contain;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  font-family: "Lucida Sans", sans-serif;
+  color: gray;
+}
+span {
+  color: #8f99fb;
+  font-weight: bolder;
+}
+.about h1 {
+  text-align: center;
+  font-size: 350%;
+}
+.about p {
+  text-align: left;
+  font-size: 200%;
+  padding-top: 10vh;
+  /* opacity: 70%; */
+  transition-delay: 200ms;
+}
+footer {
+  margin-top: 10vh;
+  background-color: dimgray;
+  height: 30vh;
+  padding-top: 5vh;
+}
+.foot p {
+  margin-top: 10vh;
+}
+.hidden {
+  opacity: 0;
+  transition: all 1s ease;
+  filter: blur();
+  transform: translateY(-10%);
+}
+.hidden_nav {
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  transform: translateY(-50%);
+}
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

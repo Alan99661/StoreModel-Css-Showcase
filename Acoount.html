@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A real Hardware store taking orders" />
+    <meta name="keywords" content="Hardware,Computers,Alienware,Store" />
+    <meta name="author" content="Alan Cholakov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Very Real Harware Store</title>
+    <link rel="stylesheet" href="Source/Accstyle.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+  </head>
+
+  <body>
+    <header class="hidden_nav">
+      <a href="Index.html" class="logo"
+        ><img class="logo" src="Source/img/Logo.png" alt="Logo Here"
+      /></a>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="About.html">About</a></li>
+          <li><a href="Acoount.html">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="hidden_text">Wellcome back <span>!</span></h1>
+      <form class="hidden">
+        <label for="uname">Username</label>
+        <input
+          type="text"
+          id="uname"
+          name="uname"
+          placeholder="AlienwareLover"
+        />
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          id="pass"
+          name="uname"
+          placeholder=""
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        />
+        <input type="submit" value="Log in" />
+      </form>
+    </main>
+
+    <footer class="foot">
+      <ul>
+        <li class="cList">
+          Contacts
+          <ul>
+            <li><a href="#">Social</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </li>
+        <p>copyright (c) 2022 kur ltd</p>
+      </ul>
+    </footer>
+    <script src="Source/Hscripts.js"></script>
+  </body>
+</html>
